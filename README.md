@@ -13,6 +13,17 @@ Feel free to explore the projects in this repository, and if you have any questi
 
 ---
 
+## Why This Portfolio?
+
+These projects are designed to showcase my ability to:
+- Architect and develop distributed systems that can scale to handle millions of requests.
+- Implement high-availability systems using cloud services like AWS.
+- Build end-to-end applications, from backend microservices to user-facing frontends.
+- Apply modern database and messaging technologies for fast, reliable data storage and communication.
+- Use DevOps tools like Docker, Kubernetes, and AWS to deploy and manage complex systems in production environments.
+
+---
+
 ### Contact Information:
 - **Email**: [My Email](mailto:dominick.blue7@gmail.com)
 - **LinkedIn**: [My LinkedIn Profile](https://linkedin.com/in/dominickblue)
@@ -96,12 +107,3 @@ These projects are built using the following core technologies:
 ![0%](https://progress-bar.xyz/0)
 - An IoT sensor monitoring system for real-time data collection and analytics, built on a distributed architecture.
 - **Technologies**: Java, React (D3.js), InfluxDB, AWS (IoT Core, Lambda).
-
-## Why This Portfolio?
-
-These projects are designed to showcase my ability to:
-- Architect and develop distributed systems that can scale to handle millions of requests.
-- Implement high-availability systems using cloud services like AWS.
-- Build end-to-end applications, from backend microservices to user-facing frontends.
-- Apply modern database and messaging technologies for fast, reliable data storage and communication.
-- Use DevOps tools like Docker, Kubernetes, and AWS to deploy and manage complex systems in production environments.
