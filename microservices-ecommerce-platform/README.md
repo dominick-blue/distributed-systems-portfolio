@@ -1,7 +1,7 @@
 ## TODO List for Microservices E-commerce Platform
 
 ### 1. **Project Setup**
-- [:white_check_mark:] Create the project directory structure. 
+- :white_check_mark: Create the project directory structure. 
 - [x] Initialize a Git repository for version control.
 - [x] Set up `pom.xml` files for each Java service (using Maven) and `package.json` for the frontend.
 - [x] Set up basic `application.properties` for services with embedded H2 for development.
