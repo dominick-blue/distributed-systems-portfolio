@@ -1,0 +1,69 @@
+# Ignore Maven / Gradle build directories
+target/
+build/
+
+# Ignore IDE-specific files (IntelliJ, Eclipse, VSCode, etc.)
+.idea/
+*.iml
+.vscode/
+.project
+.classpath
+.c9/
+.settings/
+
+# Ignore log files
+*.log
+
+# Ignore temporary files
+*.tmp
+*.swp
+*~
+
+# Ignore operating system files
+.DS_Store
+Thumbs.db
+
+# Ignore compiled class files
+*.class
+
+# Ignore packaged JAR and WAR files
+*.jar
+*.war
+*.ear
+
+# Ignore dependency folders
+node_modules/
+bower_components/
+
+# Ignore Docker specific files
+docker-compose.override.yml
+
+# Ignore environment files
+.env
+.env.local
+.env.production
+.env.test
+
+# Ignore test output
+test-output/
+
+# Ignore npm debug files
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Ignore database and data dump files
+*.sql
+*.sqlite
+*.db
+
+# Ignore Frontend build directory
+/dist/
+/out/
+/build/
+
+# Ignore lock files
+*.lock
+
+# Ignore coverage reports
+coverage/
