@@ -62,7 +62,7 @@ These projects are built using the following core technologies:
 
 ## Projects
 
-### 1. [Microservices E-commerce Platform](link-to-project-1)
+### 1. [Microservices E-commerce Platform](https://github.com/dominick-blue/distributed-systems-portfolio/tree/main/microservices-ecommerce-platform)
 ![0%](https://progress-bar.xyz/0)
 - An e-commerce platform built using a microservices architecture, with services for user management, order processing, payments, and inventory.
 - **Technologies**: Java (Spring Boot), React, PostgreSQL, AWS (EC2, S3, RDS).
