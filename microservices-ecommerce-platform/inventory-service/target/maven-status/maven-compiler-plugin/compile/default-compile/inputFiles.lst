@@ -1,1 +1,3 @@
-/Users/dominick.blue/Desktop/ProfessionalPortfolio/distributed-systems-portfolio/microservices-ecommerce-platform/inventory-service/src/main/java/com/loyalblue/ecommerce/inventory/InventoryServiceApplication.java
+/Users/dominick.blue/Desktop/ProfessionalPortfolio/distributed-systems-portfolio/microservices-ecommerce-platform/inventory-service/src/main/java/com/loyalblue/ecommerce/InventoryServiceApplication.java
+/Users/dominick.blue/Desktop/ProfessionalPortfolio/distributed-systems-portfolio/microservices-ecommerce-platform/inventory-service/src/main/java/com/loyalblue/ecommerce/controller/InventoryController.java
+/Users/dominick.blue/Desktop/ProfessionalPortfolio/distributed-systems-portfolio/microservices-ecommerce-platform/inventory-service/src/main/java/com/loyalblue/ecommerce/model/InventoryItem.java

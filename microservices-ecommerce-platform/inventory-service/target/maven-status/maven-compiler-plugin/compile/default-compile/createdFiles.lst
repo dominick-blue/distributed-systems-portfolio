@@ -1,1 +1,3 @@
-com/loyalblue/ecommerce/inventory/InventoryServiceApplication.class
+com/loyalblue/ecommerce/model/InventoryItem.class
+com/loyalblue/ecommerce/controller/InventoryController.class
+com/loyalblue/ecommerce/InventoryServiceApplication.class
