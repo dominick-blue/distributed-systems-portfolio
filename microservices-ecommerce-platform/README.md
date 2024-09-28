@@ -1,10 +1,10 @@
 ## TODO List for Microservices E-commerce Platform
 
 ### 1. **Project Setup**
-- :white_check_mark: Create the project directory structure. 
-- [x] Initialize a Git repository for version control.
-- [x] Set up `pom.xml` files for each Java service (using Maven) and `package.json` for the frontend.
-- [x] Set up basic `application.properties` for services with embedded H2 for development.
+- :white_check_mark: ~~Create the project directory structure.~~
+- :white_check_mark: ~~Initialize a Git repository for version control.~~
+- :white_check_mark: ~~Set up `pom.xml` files for each Java service (using Maven) and `package.json` for the frontend.~~
+- :white_check_mark: ~~Set up basic `application.properties` for services with embedded H2 for development.~~
 - [ ] Configure `.gitignore` to ignore unnecessary files (e.g., target directories, node_modules).
 
 ---
@@ -30,10 +30,10 @@
 ---
 
 ### 4. **Inventory Service (Core API Development)**
-- [x] ~~Create the `InventoryController` to handle API requests for the inventory service.~~
-- [x] ~~Define the **GET** endpoint `/inventory` to return a list of inventory items.~~
-- [x] ~~Create the `InventoryItem` model class to represent inventory data.~~
-- [x] ~~Test the `/inventory` API using Postman or `curl`.~~
+- :white_check_mark:~~Create the `InventoryController` to handle API requests for the inventory service.~~
+- :white_check_mark: ~~Define the **GET** endpoint `/inventory` to return a list of inventory items.~~
+- :white_check_mark: ~~Create the `InventoryItem` model class to represent inventory data.~~
+- :white_check_mark: ~~Test the `/inventory` API using Postman or `curl`.~~
 - [ ] Add more API endpoints for inventory management:
     - **POST**: To add new inventory items.
     - **PUT**: To update existing inventory items.
