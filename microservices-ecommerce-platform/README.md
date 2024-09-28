@@ -5,7 +5,7 @@
 - :white_check_mark: ~~Initialize a Git repository for version control.~~
 - :white_check_mark: ~~Set up `pom.xml` files for each Java service (using Maven) and `package.json` for the frontend.~~
 - :white_check_mark: ~~Set up basic `application.properties` for services with embedded H2 for development.~~
-- [ ] Configure `.gitignore` to ignore unnecessary files (e.g., target directories, node_modules).
+- :white_check_mark: ~~Configure `.gitignore` to ignore unnecessary files (e.g., target directories, node_modules).~~
 
 ---
 
