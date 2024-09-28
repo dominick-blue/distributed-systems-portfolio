@@ -67,43 +67,43 @@ These projects are built using the following core technologies:
 - An e-commerce platform built using a microservices architecture, with services for user management, order processing, payments, and inventory.
 - **Technologies**: Java (Spring Boot), React, PostgreSQL, AWS (EC2, S3, RDS).
 
-### 2. [Real-Time Chat Application](link-to-project-2)
+### 2. [Real-Time Chat Application]
 ![0%](https://progress-bar.xyz/0)
 - A real-time messaging system with WebSocket-based communication, supporting thousands of concurrent users.
 - **Technologies**: Java (Spring Boot), Vue.js, Redis, AWS (Lambda, DynamoDB).
 
-### 3. [Distributed Task Scheduler](link-to-project-3)
+### 3. [Distributed Task Scheduler]
 ![0%](https://progress-bar.xyz/0)
 - A scalable task scheduling system that distributes tasks across multiple nodes, built for large-scale batch processing.
 - **Technologies**: Java, React (TypeScript), PostgreSQL, AWS (SQS, ECS).
 
-### 4. [Distributed Logging and Monitoring System](link-to-project-4)
+### 4. [Distributed Logging and Monitoring System]
 ![0%](https://progress-bar.xyz/0)
 - A system to collect, store, and analyze logs from distributed services in real-time.
 - **Technologies**: Java, Next.js, ElasticSearch, AWS (CloudWatch, S3).
 
-### 5. [Cloud-Based File Sharing Tool](link-to-project-5)
+### 5. [Cloud-Based File Sharing Tool]
 ![0%](https://progress-bar.xyz/0)
 - A platform for real-time file sharing and collaboration, built with a distributed backend.
 - **Technologies**: Java (Spring Boot), React, AWS (S3, CloudFront, Cognito).
 
-### 6. [Distributed Video Streaming Platform](link-to-project-6)
+### 6. [Distributed Video Streaming Platform]
 ![0%](https://progress-bar.xyz/0)
 - A scalable video streaming service with adaptive video delivery and content distribution.
 - **Technologies**: Java, React, Cassandra, AWS (Elastic Transcoder, CloudFront).
 
-### 7. [Distributed Search Engine](link-to-project-7)
+### 7. [Distributed Search Engine]
 ![0%](https://progress-bar.xyz/0)
 - A distributed search engine that indexes and provides efficient querying across multiple nodes.
 - **Technologies**: Java, Angular, ElasticSearch, AWS (RDS, S3).
 
-### 8. [Distributed Auction System](link-to-project-8)
+### 8. [Distributed Auction System]
 ![0%](https://progress-bar.xyz/0)
 
 - A real-time auction platform with distributed bid synchronization and high availability.
 - **Technologies**: Java (Spring Boot), Vue.js, MongoDB, AWS (DynamoDB, Lambda).
 
-### 9. [Distributed IoT Sensor Monitoring System](link-to-project-9)
+### 9. [Distributed IoT Sensor Monitoring System]
 ![0%](https://progress-bar.xyz/0)
 - An IoT sensor monitoring system for real-time data collection and analytics, built on a distributed architecture.
 - **Technologies**: Java, React (D3.js), InfluxDB, AWS (IoT Core, Lambda).
