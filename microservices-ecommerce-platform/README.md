@@ -1,8 +1,8 @@
 ## TODO List for Microservices E-commerce Platform
 
 ### 1. **Project Setup**
-- [ ] Create the project directory structure.
-- [ ] Initialize a Git repository for version control.
+- [x] Create the project directory structure.
+- [x] Initialize a Git repository for version control.
 - [ ] Set up `pom.xml` files for each Java service (using Maven) and `package.json` for the frontend.
 - [ ] Set up basic Dockerfiles for each microservice and the frontend.
 - [ ] Configure `.gitignore` to ignore unnecessary files (e.g., target directories, node_modules).
