@@ -1,0 +1,37 @@
+.
+├── README.md
+├── api-gateway
+│   ├── README.md
+│   ├── pom.xml
+│   ├── src
+│   └── target
+├── frontend
+│   ├── README.md
+│   ├── node_modules
+│   ├── package-lock.json
+│   ├── package.json
+│   ├── public
+│   └── src
+├── inventory-service
+│   ├── README.md
+│   ├── pom.xml
+│   ├── src
+│   └── target
+├── order-service
+│   ├── README.md
+│   ├── pom.xml
+│   ├── src
+│   └── target
+├── payment-service
+│   ├── README.md
+│   ├── pom.xml
+│   ├── src
+│   └── target
+├── project_structure.txt
+└── user-service
+    ├── README.md
+    ├── pom.xml
+    ├── src
+    └── target
+
+20 directories, 15 files
