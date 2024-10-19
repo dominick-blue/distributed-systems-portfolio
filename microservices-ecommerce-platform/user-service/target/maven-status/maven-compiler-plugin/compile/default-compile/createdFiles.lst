@@ -1,4 +1,4 @@
-com/loyalblue/ecommerce/user/service/UserService.class
 com/loyalblue/ecommerce/user/UserServiceApplication.class
-com/loyalblue/ecommerce/user/repository/UserRepository.class
 com/loyalblue/ecommerce/user/model/User.class
+com/loyalblue/ecommerce/user/service/UserService.class
+com/loyalblue/ecommerce/user/repository/UserRepository.class
