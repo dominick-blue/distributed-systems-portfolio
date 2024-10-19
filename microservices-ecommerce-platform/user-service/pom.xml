@@ -81,6 +81,17 @@
             <scope>runtime</scope>
         </dependency>
 
+        <!--
+        Liquibase is used for database versioning and migrations.
+        This allows us to manage changes to the database schema in a controlled, consistent,
+        and versioned way across all environments.
+        -->
+        <dependency>
+            <groupId>org.liquibase</groupId>
+            <artifactId>liquibase-maven-plugin</artifactId>
+            <version>4.29.2</version>
+        </dependency>
+
 
     </dependencies>
 
@@ -90,6 +101,16 @@
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
+            </plugin>
+
+            <!-- Liquibase Maven Plugin for database migrations -->
+            <plugin>
+                <groupId>org.liquibase</groupId>
+                <artifactId>liquibase-maven-plugin</artifactId>
+                <version>4.29.2</version>
+                <configuration>
+                    <propertyFile>src/main/resources/liquibase.properties</propertyFile>
+                </configuration>
             </plugin>
         </plugins>
     </build>
