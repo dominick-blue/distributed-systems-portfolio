@@ -1,0 +1,38 @@
+# Ignore Maven build directories
+target/
+*.class
+
+# Ignore dependency files
+**/target/
+**/*.jar
+**/*.war
+
+# Ignore IDE-specific files
+.idea/
+*.iml
+*.ipr
+*.iws
+*.class
+
+# Ignore log files
+*.log
+
+# Ignore environment variable files
+.env
+
+# Ignore Node.js files in frontend
+frontend/node_modules/
+frontend/package-lock.json
+frontend/dist/
+
+# Ignore OS generated files
+.DS_Store
+Thumbs.db
+
+# Ignore temporary files
+*.tmp
+*.temp
+
+# Ignore other potential files
+*.bak
+*.swp
