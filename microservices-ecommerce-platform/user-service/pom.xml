@@ -14,6 +14,11 @@
     <properties>
         <java.version>18</java.version> <!-- Ensure this matches your Java version -->
         <spring-boot.version>3.3.4</spring-boot.version> <!-- Set Spring Boot version -->
+        <DB_HOST>user_service_db</DB_HOST>
+        <DB_PORT>5432</DB_PORT>
+        <DB_NAME>user_service_db</DB_NAME>
+        <DB_USER>${env.POSTGRES_USER_USER_SERVICE}</DB_USER>
+        <DB_PASSWORD>${env.POSTGRES_PASSWORD_USER_SERVICE}</DB_PASSWORD>
     </properties>
 
     <parent>
@@ -109,7 +114,11 @@
                 <artifactId>liquibase-maven-plugin</artifactId>
                 <version>4.29.2</version>
                 <configuration>
-                    <propertyFile>src/main/resources/liquibase.properties</propertyFile>
+                    <changeLogFile>src/main/resources/db/changelog/db.changelog-master.yml</changeLogFile>
+                    <url>jdbc:postgresql://localhost:5433/inventory_service_db</url>
+                    <username>${DB_USER}</username>
+                    <password>${DB_PASSWORD}</password>
+                    <driver>org.postgresql.Driver</driver>
                 </configuration>
             </plugin>
         </plugins>
