@@ -14,7 +14,13 @@
     <properties>
         <java.version>18</java.version> <!-- Ensure this matches your Java version -->
         <spring-boot.version>3.3.4</spring-boot.version> <!-- Set Spring Boot version -->
+        <DB_HOST>inventory_service_db</DB_HOST>
+        <DB_PORT>5432</DB_PORT>
+        <DB_NAME>inventory_service_db</DB_NAME>
+        <DB_USER>${env.POSTGRES_USER_INVENTORY_SERVICE}</DB_USER>
+        <DB_PASSWORD>${env.POSTGRES_PASSWORD_INVENTORY_SERVICE}</DB_PASSWORD>
     </properties>
+
 
     <parent>
         <groupId>org.springframework.boot</groupId>
@@ -36,12 +42,26 @@
             <artifactId>spring-boot-starter-data-jpa</artifactId>
         </dependency>
 
-        <!-- Database Driver (PostgreSQL) -->
-<!--        <dependency>-->
-<!--            <groupId>org.postgresql</groupId>-->
-<!--            <artifactId>postgresql</artifactId>-->
-<!--            <scope>runtime</scope>-->
-<!--        </dependency>-->
+        <!-- Spring Boot Test Starter -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+            <scope>test</scope>
+        </dependency>
+
+        <!-- Spring Data JPA Test Dependencies -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-test-autoconfigure</artifactId>
+            <scope>test</scope>
+        </dependency>
+
+        <!-- PostgreSQL JDBC Driver -->
+        <dependency>
+            <groupId>org.postgresql</groupId>
+            <artifactId>postgresql</artifactId>
+            <version>42.2.23</version> <!-- Make sure this version is up to date -->
+        </dependency>
 
         <!-- Dev Environment H2 DB -->
         <dependency>
@@ -65,6 +85,19 @@
             <version>0.9.1</version>
         </dependency>
 
+        <!--
+        Liquibase is used for database versioning and migrations.
+        This allows us to manage changes to the database schema in a controlled, consistent,
+        and versioned way across all environments.
+        -->
+        <dependency>
+            <groupId>org.liquibase</groupId>
+            <artifactId>liquibase-core</artifactId>
+            <version>4.29.2</version>
+        </dependency>
+
+
+
     </dependencies>
 
     <build>
@@ -74,7 +107,23 @@
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
             </plugin>
+
+            <!-- Liquibase Maven Plugin for database migrations -->
+            <plugin>
+                <groupId>org.liquibase</groupId>
+                <artifactId>liquibase-maven-plugin</artifactId>
+                <version>4.29.2</version>
+
+                <configuration>
+                    <changeLogFile>src/main/resources/db/changelog/db.changelog-master.yml</changeLogFile>
+                    <url>jdbc:postgresql://localhost:5433/inventory_service_db</url>
+                    <username>${DB_USER}</username>
+                    <password>${DB_PASSWORD}</password>
+                    <driver>org.postgresql.Driver</driver>
+                </configuration>
+            </plugin>
         </plugins>
     </build>
+
 
 </project>

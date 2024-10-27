@@ -12,6 +12,23 @@ services:
     volumes:
       - user_service_data:/var/lib/postgresql/data
 
+  user-service:
+    build:
+      context: ./user-service  # Path to user-service Dockerfile
+      dockerfile: Dockerfile
+    environment:
+      DB_HOST: user-service-db
+      DB_PORT: 5432
+      DB_NAME: ${POSTGRES_DB_USER_SERVICE}
+      DB_USER: ${POSTGRES_USER_USER_SERVICE}
+      DB_PASSWORD: ${POSTGRES_PASSWORD_USER_SERVICE}
+    depends_on:
+      - user-service-db
+    ports:
+      - "8082:8080"
+    networks:
+      - service-network
+
   inventory-service-db:
     image: postgres:latest
     container_name: inventory_service_db
@@ -23,6 +40,23 @@ services:
       - "5433:5432"
     volumes:
       - inventory_service_data:/var/lib/postgresql/data
+
+  inventory-service:
+    build:
+      context: ./inventory-service  # Path to inventory-service Dockerfile
+      dockerfile: Dockerfile
+    environment:
+      DB_HOST: inventory-service-db
+      DB_PORT: 5432
+      DB_NAME: ${POSTGRES_DB_INVENTORY_SERVICE}
+      DB_USER: ${POSTGRES_USER_INVENTORY_SERVICE}
+      DB_PASSWORD: ${POSTGRES_PASSWORD_INVENTORY_SERVICE}
+    depends_on:
+      - inventory-service-db
+    ports:
+      - "8081:8080"
+    networks:
+      - service-network
 
   order-service-db:
     image: postgres:latest
@@ -36,6 +70,23 @@ services:
     volumes:
       - order_service_data:/var/lib/postgresql/data
 
+  order-service:
+    build:
+      context: ./order-service  # Path to order-service Dockerfile
+      dockerfile: Dockerfile
+    environment:
+      DB_HOST: order-service-db
+      DB_PORT: 5432
+      DB_NAME: ${POSTGRES_DB_ORDER_SERVICE}
+      DB_USER: ${POSTGRES_USER_ORDER_SERVICE}
+      DB_PASSWORD: ${POSTGRES_PASSWORD_ORDER_SERVICE}
+    depends_on:
+      - order-service-db
+    ports:
+      - "8083:8080"
+    networks:
+      - service-network
+
   payment-service-db:
     image: postgres:latest
     container_name: payment_service_db
@@ -48,8 +99,29 @@ services:
     volumes:
       - payment_service_data:/var/lib/postgresql/data
 
+  payment-service:
+    build:
+      context: ./payment-service  # Path to payment-service Dockerfile
+      dockerfile: Dockerfile
+    environment:
+      DB_HOST: payment-service-db
+      DB_PORT: 5432
+      DB_NAME: ${POSTGRES_DB_PAYMENT_SERVICE}
+      DB_USER: ${POSTGRES_USER_PAYMENT_SERVICE}
+      DB_PASSWORD: ${POSTGRES_PASSWORD_PAYMENT_SERVICE}
+    depends_on:
+      - payment-service-db
+    ports:
+      - "8084:8080"
+    networks:
+      - service-network
+
 volumes:
   user_service_data:
   inventory_service_data:
   order_service_data:
   payment_service_data:
+
+networks:
+  service-network:
+    driver: bridge
