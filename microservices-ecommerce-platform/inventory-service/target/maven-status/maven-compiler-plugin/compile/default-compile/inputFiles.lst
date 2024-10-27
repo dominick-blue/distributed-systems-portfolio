@@ -1,4 +1,4 @@
-/Users/dominick.blue/Desktop/ProfessionalPortfolio/distributed-systems-portfolio/microservices-ecommerce-platform/inventory-service/src/main/java/com/loyalblue/ecommerce/InventoryServiceApplication.java
-/Users/dominick.blue/Desktop/ProfessionalPortfolio/distributed-systems-portfolio/microservices-ecommerce-platform/inventory-service/src/main/java/com/loyalblue/ecommerce/controller/HealthCheckController.java
-/Users/dominick.blue/Desktop/ProfessionalPortfolio/distributed-systems-portfolio/microservices-ecommerce-platform/inventory-service/src/main/java/com/loyalblue/ecommerce/controller/InventoryController.java
-/Users/dominick.blue/Desktop/ProfessionalPortfolio/distributed-systems-portfolio/microservices-ecommerce-platform/inventory-service/src/main/java/com/loyalblue/ecommerce/model/InventoryItem.java
+/Users/dominick.blue/Desktop/ProfessionalPortfolio/distributed-systems-portfolio/microservices-ecommerce-platform/inventory-service/src/main/java/com/loyalblue/ecommerce/inventory/InventoryServiceApplication.java
+/Users/dominick.blue/Desktop/ProfessionalPortfolio/distributed-systems-portfolio/microservices-ecommerce-platform/inventory-service/src/main/java/com/loyalblue/ecommerce/inventory/controller/HealthCheckController.java
+/Users/dominick.blue/Desktop/ProfessionalPortfolio/distributed-systems-portfolio/microservices-ecommerce-platform/inventory-service/src/main/java/com/loyalblue/ecommerce/inventory/controller/InventoryController.java
+/Users/dominick.blue/Desktop/ProfessionalPortfolio/distributed-systems-portfolio/microservices-ecommerce-platform/inventory-service/src/main/java/com/loyalblue/ecommerce/inventory/controller/model/InventoryItem.java

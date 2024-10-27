@@ -1,4 +1,4 @@
-com/loyalblue/ecommerce/controller/HealthCheckController.class
-com/loyalblue/ecommerce/controller/InventoryController.class
-com/loyalblue/ecommerce/InventoryServiceApplication.class
-com/loyalblue/ecommerce/model/InventoryItem.class
+com/loyalblue/ecommerce/inventory/controller/InventoryController.class
+com/loyalblue/ecommerce/inventory/InventoryServiceApplication.class
+com/loyalblue/ecommerce/inventory/controller/model/InventoryItem.class
+com/loyalblue/ecommerce/inventory/controller/HealthCheckController.class

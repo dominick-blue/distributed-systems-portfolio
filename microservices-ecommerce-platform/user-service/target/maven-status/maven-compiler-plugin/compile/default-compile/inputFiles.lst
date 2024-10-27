@@ -1,4 +1,5 @@
 /Users/dominick.blue/Desktop/ProfessionalPortfolio/distributed-systems-portfolio/microservices-ecommerce-platform/user-service/src/main/java/com/loyalblue/ecommerce/user/UserServiceApplication.java
+/Users/dominick.blue/Desktop/ProfessionalPortfolio/distributed-systems-portfolio/microservices-ecommerce-platform/user-service/src/main/java/com/loyalblue/ecommerce/user/controller/HealthCheckController.java
 /Users/dominick.blue/Desktop/ProfessionalPortfolio/distributed-systems-portfolio/microservices-ecommerce-platform/user-service/src/main/java/com/loyalblue/ecommerce/user/model/User.java
 /Users/dominick.blue/Desktop/ProfessionalPortfolio/distributed-systems-portfolio/microservices-ecommerce-platform/user-service/src/main/java/com/loyalblue/ecommerce/user/repository/UserRepository.java
 /Users/dominick.blue/Desktop/ProfessionalPortfolio/distributed-systems-portfolio/microservices-ecommerce-platform/user-service/src/main/java/com/loyalblue/ecommerce/user/service/UserService.java
